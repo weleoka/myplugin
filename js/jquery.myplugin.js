@@ -3,10 +3,7 @@
 
     $.fn.slideSwitch = function() {
         // Plugin code
-      var $active = $('#slideshow IMG:first')
-              .addClass('active');
-
-      console.log('Slide switch.');
+      var $active;
 
       $active = $('#slideshow IMG.active');
     
@@ -17,7 +14,7 @@
                   : $('#slideshow IMG:first');
 
       $active.addClass('last-active')
-          .removeClass('active last-active')
+          .removeClass('active')
           .fadeToggle('slow');  
 
       $next.css({opacity: 0.0})
