@@ -1,16 +1,19 @@
-<?php $title='JS - JQuery!'; include '../testRAW/header.php'; include 'filereader.php' ?>
-<?php $pictures = readAllItemsinDir('../img/gallery'); ?>
+<?php $title='jQuery! slideshow.'; include 'incl/header.php'; include 'src/filereader.php' ?>
+<?php $pictures = readAllItemsinDir('img/gallery'); ?>
 
-<div id='flash'>
-	<div id='box1' class='box'>
+<div id="main">
 		<h1>Slideshow YES!.</h1>
-		<p>Se vad roligt man kan ha när man kan JQuery.</p>
-		<div id="slideshow">
+		<p>slideshow example.</p>
+
+		<div class="slideshow">
 			<?=$pictures?>
 		</div>
 		
-	</div>
-</div>
+		<div class="slideshow_thumbs">
+			<?=$pictures?>
+		</div>
 
-<?php $path = __DIR__; include '../testRAW/footer.php' ?>
+</div>
+		
+<?php $path = __DIR__; include 'incl/footer.php' ?>
 

@@ -1,25 +1,25 @@
 (function($) {
-    // Shell for your plugin code
 
     $.fn.slideSwitch = function() {
-        // Plugin code
-      var $active;
 
-      $active = $('#slideshow IMG.active');
-    
-      if ( $active.length === 0 ) { $active = $('#slideshow IMG:last'); }
+      var $active, $selected;
 
-      var $next =   $active.next().length 
+      $active = $('.slideshow IMG.active');
+      $selected = $('.slideshow_thumbs IMG.selected');
+
+      var $next =   $active.next().length
                   ? $active.next()
-                  : $('#slideshow IMG:first');
+                  : $('.slideshow IMG:first');
+      var $nxTu =   $selected.next().length
+                  ? $selected.next()
+                  : $('.slideshow_thumbs IMG:first');                  
 
-      $active.addClass('last-active')
-          .removeClass('active')
-          .fadeToggle('slow');  
+      $active   .removeClass('active');
+      $selected .removeClass('selected');
+              
+      $next.addClass('active');        
+      $nxTu.addClass('selected');
 
-      $next.css({opacity: 0.0})
-          .addClass('active')
-          .animate({opacity: 1.0}, 1000, function() {});
-  };
+    };
 
-})(jQuery);
+ })(jQuery);

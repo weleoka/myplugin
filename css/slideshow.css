@@ -1,0 +1,52 @@
+
+ /** --------------------------------------------------------------
+ * 
+ *  Customising style for slideshow.
+ */
+
+
+.slideshow {
+	width: 350px;
+    height: 300px;
+	overflow: hidden;
+    text-align: center;
+    position: relative;
+    float: left;
+}
+
+.slideshow IMG.active {
+    z-index: 10;
+    opacity: 1.0;
+}
+
+.slideshow IMG.last-active {
+    z-index: 9;
+}
+
+.slideshow IMG {
+	min-width: 350px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 8;
+    opacity: 0.0;
+}
+
+.slideshow_thumbs {
+    text-align: ;
+    float: right:
+}
+
+.slideshow_thumbs img {
+    width: 75px;
+    height: 75px;
+    border: 2px solid #BEA998;
+}
+
+.slideshow_thumbs .selected { 
+    border-color: blue; 
+}
+
+
+
