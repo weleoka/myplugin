@@ -12,6 +12,7 @@
     text-align: center;
     position: relative;
     float: left;
+    margin-right: 0.5em;
 }
 
 .slideshow IMG.active {
@@ -46,6 +47,7 @@
 
 .slideshow_thumbs .selected { 
     border-color: blue; 
+    border-radius: 5px;
 }
 
 

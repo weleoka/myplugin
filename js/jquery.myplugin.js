@@ -18,7 +18,9 @@
       $selected .removeClass('selected');
               
       $next.addClass('active');        
-      $nxTu.addClass('selected');
+      $nxTu.addClass('selected')
+                .fadeToggle()
+                .fadeToggle();
 
     };
 
