@@ -12,12 +12,12 @@
                   : $('.slideshow IMG:first');
       var $nxTu =   $selected.next().length
                   ? $selected.next()
-                  : $('.slideshow_thumbs IMG:first');                  
+                  : $('.slideshow_thumbs IMG:first');
 
       $active   .removeClass('active');
       $selected .removeClass('selected');
-              
-      $next.addClass('active');        
+
+      $next.addClass('active');
       $nxTu.addClass('selected')
                 .fadeToggle()
                 .fadeToggle();
